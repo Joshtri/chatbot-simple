@@ -31,7 +31,7 @@ Pastikan Anda sudah menginstall software berikut:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/Joshtri/chatbot-simple
-   cd fontein-si-umkm-1-3
+   cd chatbot-simple
    
 1. **Install Packages:**
    ```bash
