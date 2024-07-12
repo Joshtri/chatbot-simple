@@ -10,6 +10,8 @@ import manager from '../nlpManager.js'; // Mengimpor instance NLPManager
 // };
 
 // Fungsi untuk memproses teks dan mengembalikan jawaban NLP
+
+
 export const processText = async (req, res) => {
     const text = req.body.text; // Mendapatkan teks dari body permintaan
     const response = await manager.process('id', text); // Memproses teks menggunakan model NLP
