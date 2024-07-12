@@ -4,18 +4,21 @@
   "main": "index.js",
   "license": "MIT",
   "type": "module",
-
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "eslint": "eslint src/index.js"
   },
-
   "dependencies": {
+    "@eslint/js": "^9.6.0",
     "express": "^4.19.2",
     "hbs": "^4.2.0",
     "node-nlp": "^4.27.0",
     "nodemon": "^3.1.4",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "eslint": "9.x",
+    "globals": "^15.8.0"
   }
-
 }

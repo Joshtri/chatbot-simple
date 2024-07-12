@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-catch */
 import manager from '../nlpManager.js'; // Mengimpor instance NLPManager
 
 
