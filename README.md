@@ -21,6 +21,7 @@
 - **Express**: web Framework yang digunakan dalam pengembangan project Node.Js.
 - **hbs**: handlebars merupakan sebuah bahasa templating yang simpel untuk Node.js
 - **picocss**: merupakan framework frontend yang minimalist
+- **node-nlp**: merupakan package yang digunakan untuk natural language utility yang sifatnya umum untuk node js
 
 ###  Prerequisites
 Pastikan Anda sudah menginstall software berikut:
