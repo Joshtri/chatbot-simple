@@ -5,9 +5,9 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
-    "eslint": "eslint src/index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "eslint": "eslint index.js"
   },
   "dependencies": {
     "@eslint/js": "^9.6.0",
@@ -20,5 +20,7 @@
   "devDependencies": {
     "eslint": "9.x",
     "globals": "^15.8.0"
-  }
+  },
+  "repository": "https://github.com/Joshtri/chatbot-simple.git",
+  "author": "Joshtri <stuffofyos1516@gmail.com>"
 }
