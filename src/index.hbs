@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+
+    <link rel="shortcut icon" href="https://w7.pngwing.com/pngs/658/334/png-transparent-robot-icon-flat-flat-design-technology-talk-logo-machine-reception-connection.png" type="image/x-icon">
+
+
+    <title>Chatting with Bot 🤖</title>
+  </head>
+  <body>
+
+    <main class="container">
+    <h1>{{title}}</h1>
+
+    <hr>
+
+        <form id="chat-form">
+            <label for="message">Kirim Pesan:</label>
+            <input type="text" id="message" name="message" required>
+            <button type="submit">Kirim</button>
+        </form>
+        <div id="response"></div>
+
+    </main>
+
+
+
+    <main class="container mb-5">
+        <hr>
+        <details>
+            <summary>Batasan dalam Chatbot</summary>
+            <ul>
+                <li>Respons chatbot tergantung pada data training yang tersedia. Meskipun mencoba mencakup banyak percakapan, masih ada kemungkinan beberapa pertanyaan tidak akan dijawab dengan benar.</li>
+                <li>Chatbot tidak mampu memahami bahasa alami secara sempurna dan mungkin memerlukan kata kunci tertentu untuk merespons dengan baik.</li>
+                <li>Pesan yang dikirimkan oleh pengguna harus sesuai dengan format yang diharapkan untuk mendapatkan respons yang akurat.</li>
+                <li>Waktu respons dari chatbot bisa bervariasi tergantung pada koneksi dan kondisi server.</li>
+            </ul>
+        </details>
+    </main>
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/chat.js"></script>
+
+  </body>
+</html>

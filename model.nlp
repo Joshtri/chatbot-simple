@@ -1,0 +1,736 @@
+{
+  "settings": {
+    "languages": [
+      "id"
+    ],
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "id"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "id": {
+        "settings": {
+          "locale": "id",
+          "trainByDomain": false,
+          "tag": "domain-manager-id",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "siang": {
+            "intent": "salam",
+            "domain": "default"
+          },
+          "malam": {
+            "intent": "salam",
+            "domain": "default"
+          },
+          "halo": {
+            "intent": "salam",
+            "domain": "default"
+          },
+          "yuhu": {
+            "intent": "salam",
+            "domain": "default"
+          },
+          "hey": {
+            "intent": "salam",
+            "domain": "default"
+          },
+          "bro,hai": {
+            "intent": "salam",
+            "domain": "default"
+          },
+          "apa,kabar,nih": {
+            "intent": "tanya_kabar",
+            "domain": "default"
+          },
+          "gimana,kabar": {
+            "intent": "tanya_kabar",
+            "domain": "default"
+          },
+          "banyak,ima,kasih": {
+            "intent": "ucapan_terima_kasih",
+            "domain": "default"
+          },
+          "makasih,ya": {
+            "intent": "ucapan_terima_kasih",
+            "domain": "default"
+          },
+          "dulu,sudah,ya": {
+            "intent": "perpisahan",
+            "domain": "default"
+          },
+          "kete,lagi,sampe": {
+            "intent": "perpisahan",
+            "domain": "default"
+          },
+          "baik,tidak": {
+            "intent": "respons_kabar_tidak_baik",
+            "domain": "default"
+          },
+          "sakit,sedang": {
+            "intent": "respons_kabar_tidak_baik",
+            "domain": "default"
+          },
+          "sakit,saya": {
+            "intent": "respons_kabar_tidak_baik",
+            "domain": "default"
+          },
+          "baik,kurang": {
+            "intent": "respons_kabar_tidak_baik",
+            "domain": "default"
+          },
+          "badan,enak,tidak": {
+            "intent": "respons_kabar_tidak_baik",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "salam": "default",
+          "tanya_kabar": "default",
+          "ucapan_terima_kasih": "default",
+          "perpisahan": "default",
+          "respons_kabar_tidak_baik": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "siang",
+            "intent": "salam"
+          },
+          {
+            "domain": "default",
+            "utterance": "malam",
+            "intent": "salam"
+          },
+          {
+            "domain": "default",
+            "utterance": "halo",
+            "intent": "salam"
+          },
+          {
+            "domain": "default",
+            "utterance": "yuhu",
+            "intent": "salam"
+          },
+          {
+            "domain": "default",
+            "utterance": "hey",
+            "intent": "salam"
+          },
+          {
+            "domain": "default",
+            "utterance": "hai bro",
+            "intent": "salam"
+          },
+          {
+            "domain": "default",
+            "utterance": "apa kabar nih",
+            "intent": "tanya_kabar"
+          },
+          {
+            "domain": "default",
+            "utterance": "gimana kabarnya",
+            "intent": "tanya_kabar"
+          },
+          {
+            "domain": "default",
+            "utterance": "terima kasih banyak",
+            "intent": "ucapan_terima_kasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "makasih ya",
+            "intent": "ucapan_terima_kasih"
+          },
+          {
+            "domain": "default",
+            "utterance": "sudah dulu ya",
+            "intent": "perpisahan"
+          },
+          {
+            "domain": "default",
+            "utterance": "sampe ketemu lagi",
+            "intent": "perpisahan"
+          },
+          {
+            "domain": "default",
+            "utterance": "tidak baik",
+            "intent": "respons_kabar_tidak_baik"
+          },
+          {
+            "domain": "default",
+            "utterance": "sedang sakit",
+            "intent": "respons_kabar_tidak_baik"
+          },
+          {
+            "domain": "default",
+            "utterance": "saya sakit",
+            "intent": "respons_kabar_tidak_baik"
+          },
+          {
+            "domain": "default",
+            "utterance": "kurang baik",
+            "intent": "respons_kabar_tidak_baik"
+          },
+          {
+            "domain": "default",
+            "utterance": "tidak enak badan",
+            "intent": "respons_kabar_tidak_baik"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "id",
+              "tag": "nlu-id",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "siang": 1,
+              "malam": 1,
+              "halo": 1,
+              "yuhu": 1,
+              "hey": 1,
+              "hai": 1,
+              "bro": 1,
+              "apa": 1,
+              "kabar": 1,
+              "nih": 1,
+              "gimana": 1,
+              "ima": 1,
+              "kasih": 1,
+              "banyak": 1,
+              "makasih": 1,
+              "ya": 1,
+              "sudah": 1,
+              "dulu": 1,
+              "sampe": 1,
+              "kete": 1,
+              "lagi": 1,
+              "tidak": 1,
+              "baik": 1,
+              "sedang": 1,
+              "sakit": 1,
+              "saya": 1,
+              "kurang": 1,
+              "enak": 1,
+              "badan": 1
+            },
+            "intents": {
+              "salam": 1,
+              "tanya_kabar": 1,
+              "ucapan_terima_kasih": 1,
+              "perpisahan": 1,
+              "respons_kabar_tidak_baik": 1
+            },
+            "intentFeatures": {
+              "salam": {
+                "siang": 1,
+                "malam": 1,
+                "halo": 1,
+                "yuhu": 1,
+                "hey": 1,
+                "hai": 1,
+                "bro": 1
+              },
+              "tanya_kabar": {
+                "apa": 1,
+                "kabar": 1,
+                "nih": 1,
+                "gimana": 1
+              },
+              "ucapan_terima_kasih": {
+                "ima": 1,
+                "kasih": 1,
+                "banyak": 1,
+                "makasih": 1,
+                "ya": 1
+              },
+              "perpisahan": {
+                "sudah": 1,
+                "dulu": 1,
+                "ya": 1,
+                "sampe": 1,
+                "kete": 1,
+                "lagi": 1
+              },
+              "respons_kabar_tidak_baik": {
+                "tidak": 1,
+                "baik": 1,
+                "sedang": 1,
+                "sakit": 1,
+                "saya": 1,
+                "kurang": 1,
+                "enak": 1,
+                "badan": 1
+              }
+            },
+            "featuresToIntent": {
+              "siang": [
+                "salam"
+              ],
+              "malam": [
+                "salam"
+              ],
+              "halo": [
+                "salam"
+              ],
+              "yuhu": [
+                "salam"
+              ],
+              "hey": [
+                "salam"
+              ],
+              "hai": [
+                "salam"
+              ],
+              "bro": [
+                "salam"
+              ],
+              "apa": [
+                "tanya_kabar"
+              ],
+              "kabar": [
+                "tanya_kabar"
+              ],
+              "nih": [
+                "tanya_kabar"
+              ],
+              "gimana": [
+                "tanya_kabar"
+              ],
+              "ima": [
+                "ucapan_terima_kasih"
+              ],
+              "kasih": [
+                "ucapan_terima_kasih"
+              ],
+              "banyak": [
+                "ucapan_terima_kasih"
+              ],
+              "makasih": [
+                "ucapan_terima_kasih"
+              ],
+              "ya": [
+                "ucapan_terima_kasih",
+                "perpisahan"
+              ],
+              "sudah": [
+                "perpisahan"
+              ],
+              "dulu": [
+                "perpisahan"
+              ],
+              "sampe": [
+                "perpisahan"
+              ],
+              "kete": [
+                "perpisahan"
+              ],
+              "lagi": [
+                "perpisahan"
+              ],
+              "tidak": [
+                "respons_kabar_tidak_baik"
+              ],
+              "baik": [
+                "respons_kabar_tidak_baik"
+              ],
+              "sedang": [
+                "respons_kabar_tidak_baik"
+              ],
+              "sakit": [
+                "respons_kabar_tidak_baik"
+              ],
+              "saya": [
+                "respons_kabar_tidak_baik"
+              ],
+              "kurang": [
+                "respons_kabar_tidak_baik"
+              ],
+              "enak": [
+                "respons_kabar_tidak_baik"
+              ],
+              "badan": [
+                "respons_kabar_tidak_baik"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "id",
+                "tag": "nlu-id",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "siang",
+                "malam",
+                "halo",
+                "yuhu",
+                "hey",
+                "hai",
+                "bro",
+                "apa",
+                "kabar",
+                "nih",
+                "gimana",
+                "ima",
+                "kasih",
+                "banyak",
+                "makasih",
+                "ya",
+                "sudah",
+                "dulu",
+                "sampe",
+                "kete",
+                "lagi",
+                "tidak",
+                "baik",
+                "sedang",
+                "sakit",
+                "saya",
+                "kurang",
+                "enak",
+                "badan"
+              ],
+              "intents": [
+                "salam",
+                "tanya_kabar",
+                "ucapan_terima_kasih",
+                "perpisahan",
+                "respons_kabar_tidak_baik"
+              ],
+              "perceptrons": [
+                [
+                  6.974194049835205,
+                  7.033478736877441,
+                  6.973142623901367,
+                  6.911220073699951,
+                  6.847810745239258,
+                  3.6052181720733643,
+                  3.6052181720733643,
+                  -1.5710101127624512,
+                  -4.318605422973633,
+                  -1.5710101127624512,
+                  -2.7299611568450928,
+                  -2.370762348175049,
+                  -2.370762348175049,
+                  -2.370762348175049,
+                  -2.7728543281555176,
+                  -4.2519330978393555,
+                  -1.4758719205856323,
+                  -1.4758719205856323,
+                  -2.3665947914123535,
+                  -2.3665947914123535,
+                  -2.3665947914123535,
+                  -3.421726942062378,
+                  -4.288902759552002,
+                  -2.3924412727355957,
+                  -4.722869396209717,
+                  -2.3233654499053955,
+                  -2.692754030227661,
+                  -1.8255813121795654,
+                  -1.8255813121795654,
+                  7.119235404332043
+                ],
+                [
+                  -0.6796525120735168,
+                  -0.6734956502914429,
+                  -0.6671730279922485,
+                  -0.660696268081665,
+                  -0.6540766954421997,
+                  -0.3804754614830017,
+                  -0.3804754614830017,
+                  2.774266242980957,
+                  8.132085800170898,
+                  2.774266242980957,
+                  5.357994079589844,
+                  -0.360626757144928,
+                  -0.360626757144928,
+                  -0.360626757144928,
+                  -0.3664189279079437,
+                  -0.6687780618667603,
+                  -0.26954326033592224,
+                  -0.26954326033592224,
+                  -0.3579837679862976,
+                  -0.3579837679862976,
+                  -0.3579837679862976,
+                  -0.5581938028335571,
+                  -0.6243762373924255,
+                  -0.33567389845848083,
+                  -0.6788274645805359,
+                  -0.3143796920776367,
+                  -0.31670600175857544,
+                  -0.24895235896110535,
+                  -0.24895235896110535,
+                  0.6807812414077655
+                ],
+                [
+                  -0.8865491151809692,
+                  -0.8772134184837341,
+                  -0.8677164316177368,
+                  -0.8580716252326965,
+                  -0.8482927083969116,
+                  -0.473042368888855,
+                  -0.473042368888855,
+                  -0.2550315260887146,
+                  -0.608323335647583,
+                  -0.2550315260887146,
+                  -0.3426269590854645,
+                  4.459292411804199,
+                  4.459292411804199,
+                  4.459292411804199,
+                  8.009529113769531,
+                  5.088458061218262,
+                  -2.9374542236328125,
+                  -2.9374542236328125,
+                  -0.4053630530834198,
+                  -0.4053630530834198,
+                  -0.4053630530834198,
+                  -0.6329028606414795,
+                  -0.7342372536659241,
+                  -0.3991030156612396,
+                  -0.7937958836555481,
+                  -0.37118038535118103,
+                  -0.3879796862602234,
+                  -0.28289005160331726,
+                  -0.28289005160331726,
+                  0.9098674462428991
+                ],
+                [
+                  -0.6414027810096741,
+                  -0.6315844058990479,
+                  -0.6164291501045227,
+                  -0.6064791679382324,
+                  -0.5959492325782776,
+                  -0.39292120933532715,
+                  -0.39292120933532715,
+                  -0.23305146396160126,
+                  -0.54164057970047,
+                  -0.23305146396160126,
+                  -0.28104883432388306,
+                  -0.29546085000038147,
+                  -0.29546085000038147,
+                  -0.29546085000038147,
+                  -2.930323362350464,
+                  2.599501609802246,
+                  5.539265155792236,
+                  5.539265155792236,
+                  4.587791919708252,
+                  4.587791919708252,
+                  4.587791919708252,
+                  -0.6220978498458862,
+                  -0.6903183460235596,
+                  -0.35963156819343567,
+                  -0.7475887537002563,
+                  -0.34213513135910034,
+                  -0.3412354588508606,
+                  -0.27173951268196106,
+                  -0.27173951268196106,
+                  0.5117831951418826
+                ],
+                [
+                  -1.9299039840698242,
+                  -1.912941813468933,
+                  -1.895510196685791,
+                  -1.8776404857635498,
+                  -1.8593627214431763,
+                  -1.061108112335205,
+                  -1.061108112335205,
+                  -0.609653651714325,
+                  -1.4059942960739136,
+                  -0.609653651714325,
+                  -0.7484702467918396,
+                  -0.7636892795562744,
+                  -0.7636892795562744,
+                  -0.7636892795562744,
+                  -0.7871533036231995,
+                  -1.3481401205062866,
+                  -0.5129188895225525,
+                  -0.5129188895225525,
+                  -0.7295874953269958,
+                  -0.7295874953269958,
+                  -0.7295874953269958,
+                  5.504443645477295,
+                  7.137200832366943,
+                  4.161099433898926,
+                  8.240438461303711,
+                  4.078432083129883,
+                  4.998631477355957,
+                  3.3703229427337646,
+                  3.3703229427337646,
+                  1.932598763324797
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "id",
+        "siang"
+      ],
+      [
+        "id",
+        "malam"
+      ],
+      [
+        "id",
+        "halo"
+      ],
+      [
+        "id",
+        "yuhu"
+      ],
+      [
+        "id",
+        "hey"
+      ],
+      [
+        "id",
+        "hai bro"
+      ],
+      [
+        "id",
+        "apa kabar nih"
+      ],
+      [
+        "id",
+        "gimana kabarnya"
+      ],
+      [
+        "id",
+        "terima kasih banyak"
+      ],
+      [
+        "id",
+        "makasih ya"
+      ],
+      [
+        "id",
+        "sudah dulu ya"
+      ],
+      [
+        "id",
+        "sampe ketemu lagi"
+      ],
+      [
+        "id",
+        "tidak baik"
+      ],
+      [
+        "id",
+        "sedang sakit"
+      ],
+      [
+        "id",
+        "saya sakit"
+      ],
+      [
+        "id",
+        "kurang baik"
+      ],
+      [
+        "id",
+        "tidak enak badan"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "id": {
+        "salam": [
+          {
+            "answer": "Halo!"
+          },
+          {
+            "answer": "Hai!"
+          }
+        ],
+        "tanya_kabar": [
+          {
+            "answer": "Kabar baik, terima kasih!"
+          },
+          {
+            "answer": "Saya sedang baik, bagaimana dengan Anda?"
+          }
+        ],
+        "ucapan_terima_kasih": [
+          {
+            "answer": "Sama-sama!"
+          },
+          {
+            "answer": "Tidak masalah."
+          }
+        ],
+        "perpisahan": [
+          {
+            "answer": "Sampai jumpa!"
+          },
+          {
+            "answer": "Selamat tinggal!"
+          }
+        ],
+        "respons_kabar_tidak_baik": [
+          {
+            "answer": "Oh, semoga cepat pulih!"
+          },
+          {
+            "answer": "Mudah-mudahan segera membaik."
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
