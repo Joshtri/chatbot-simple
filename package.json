@@ -1,18 +1,21 @@
 {
+  "name": "nlp-qna",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js"
   },
-  "type": "module",
+
   "dependencies": {
     "express": "^4.19.2",
     "hbs": "^4.2.0",
     "node-nlp": "^4.27.0",
     "nodemon": "^3.1.4",
     "path": "^0.12.7"
-  },
-  "name": "nlp-qna",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+  }
+
 }
